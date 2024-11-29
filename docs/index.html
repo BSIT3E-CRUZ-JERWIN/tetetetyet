@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <title>Portfolio</title>
+      <link rel="icon" href="./img/J-C.png" type="image/icon type">
+   </head>
+   <body>
+      <div class="navbar">
+        <div class="logo"> <img src="./img/Jerwin-Cruz.png" alt="Portfolio Logo"> </div>
+         <div class="nav-buttons">
+            <button class="btn active">Home</button> 
+            <button class="btn" onclick="document.location='./about.html'">About</button> 
+            <button class="btn" onclick="document.location='./contact.html'">Contacts</button>
+         </div>
+      </div>
+      <div class="title-header">
+         <div class="image-box">
+            <img src="./img/1BY1.png" alt="Profile Photo">
+         </div>
+         <div class="text">
+            <h2>Jerwin Cruz</h2>
+            <pre>
+I am a beginner web developer with a passion for creating beautiful and functional websites. I'm driven by a
+desire to learn and grow in this field, constantly exploring new technologies and techniques to enhance my
+skills. I believe that websites should be visually appealing, user-friendly, and serve their purpose effectively.
+            </pre>
+         </div>
+      </div>
+      <div class="container textmid-container">
+         <div class="textmid">Here are some of my recent projects:</div>
+      </div>
+      <div class="container gallery">
+            <div class="image"><img src="./img/content1.jpg" alt="Project 1"></div>
+            <div class="image"><img src="./img/content2.jpg" alt="Project 2"></div>
+            <div class="image"><img src="./img/content3.jpg" alt="Project 3"></div>
+      </div>
+      <div class="download-div">
+         <a href="https://drive.proton.me/urls/DPGYBBBP8C#FtERJWNZ0uNI">
+         <button class="download-floating-button"><strong>Download Project Files</strong></button>
+         </a>
+      </div>
+      <div class="faq-container" id="faqContainer">
+         <div class="faq-content">
+            <h2>FAQs about Jerwin Cruz</h2>
+            <ul>
+               <li><strong>Q: What web development languages, programming languages, or database languages have you already gained experience with?</strong><br>
+                  A:  I have experience with HTML, CSS, JavaScript, SQL, Java, Python, and C++. While I may have forgotten some details, I can easily refresh my knowledge by referring to guides.
+               </li>
+               <li><strong>Q: Are you sure you want to pursue a career as a web developer?</strong><br>
+                  A: As of now, I'm not certain. While I find coding interesting and enjoy learning new languages, I'm not sure if it's the right path for me long-term.
+               </li>
+               <li><strong>Q: Are you satisfied with your IT degree so far?</strong><br>
+                  A: Yes, I am. Even though I've faced some challenges, I find the field interesting and relatively easy to learn. Seeing my college friends struggle in other courses has made me appreciate my chosen path.
+               </li>
+            </ul>
+            <button class="close-btn" onclick="closeFAQ()"><strong>Close</strong></button>
+         </div>
+      </div>
+      <button class="floating-button" onclick="openFAQ()"><strong>FAQs</strong></button>
+      <script src="./js/script.js"></script>
+   </body>
+</html>

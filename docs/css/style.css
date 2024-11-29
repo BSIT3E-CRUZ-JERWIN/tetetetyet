@@ -1,0 +1,302 @@
+@font-face { 
+    font-family: JunigardenSwash; src: url('../fonts/JunigardenSwash.otf'); 
+} 
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: black;
+	background-image: url('../img/WHOLEBG.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: transparent;
+	color: white;
+}
+
+
+.logo {
+    width: 150px; 
+    height: auto; 
+}
+
+.logo img {
+    width: 80%; 
+    height: auto; 
+    border-radius: 10px;
+}
+.nav-buttons .btn {
+	background-color: transparent;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-buttons .btn:hover {
+	background-color: rgba(85, 85, 85, 0.5);
+}
+
+.nav-buttons .btn.active {
+	background-color: rgba(85, 85, 85, 0.7);
+}
+
+.title-header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.image-box {
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-right: 50px;
+}
+
+.image-box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.profile-photo img {
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.text {
+	color: white;
+	font-size: 115%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 20px;
+    font-family: JunigardenSwash;
+}
+
+.about-text {
+	color: white;
+	font-size: 115%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 20px;
+	margin: 100px;
+	margin-top: 55px;
+	text-align: center;
+}
+
+.about-text h2 {
+    font-family: JunigardenSwash;
+}
+
+.contact-text {
+	color: white;
+	font-size: 115%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 20px;
+	margin: 100px;
+	margin-top: 120px;
+	text-align: center;
+}
+ 
+.contact-text h2, h3 {
+    font-family: JunigardenSwash;
+}
+
+.right-side {
+	flex: 2;
+	padding-left: 20px;
+}
+
+.textmid-container {
+	display: flex;
+	justify-content: center;
+	width: 78%;
+	margin-bottom: 20px;
+	font-size: larger;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 10px;
+    font-family: JunigardenSwash;
+}
+
+.gallery {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.gallery .image {
+	width: 100%;
+	max-width: 400px;
+	aspect-ratio: 16 / 9;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+
+.gallery .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.left-side,
+	.right-side {
+		width: 100%;
+	}
+
+	.gallery .image {
+		max-width: calc(50% - 10px);
+	}
+}
+
+@media (max-width: 480px) {
+	.gallery .image {
+		max-width: 100%;
+	}
+}
+
+.floating-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgba(85, 85, 85, 0.7);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+	background-color: #102a43;
+}
+
+.faq-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 600px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	display: none;
+	z-index: 100;
+}
+
+.faq-content {
+	text-align: left;
+}
+
+.faq-content h2 {
+	margin-bottom: 15px;
+}
+
+.faq-content ul {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+.faq-content li {
+	margin-bottom: 10px;
+}
+
+.close-btn {
+	background-color: transparent;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.close-btn:hover {
+	background-color: #102a43;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.social-links a {
+	display: inline-block;
+}
+
+.social-links img {
+	width: 70px;
+	height: 70px;
+}
+
+.social-links a:hover img {
+	opacity: 0.7;
+}
+
+.download-div {
+	text-align: center;
+}
+
+.download-floating-button {
+	background-color: rgba(85, 85, 85, 0.7);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin: 0 10px;
+}
+
+.download-floating-button:hover {
+	background-color: #102a43;
+}
